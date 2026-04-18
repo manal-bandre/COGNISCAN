@@ -220,7 +220,7 @@ export function FacialTask({ taskKey, taskName, onComplete }: Props) {
 
               {/* Progress dots */}
               <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
-                {EXPRESSIONS.map((e, i) => (
+                {EXPRESSIONS.map((_, i) => (
                   <div key={i} style={{
                     height: 5,
                     width: i === currentExprIdx ? 22 : 14,
